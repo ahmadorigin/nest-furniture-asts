@@ -157,7 +157,7 @@ body {
   color: #fffffe;
 }
 .category--table__left .a {
-  color: #2cb67d;
+  color: #133929;
 }
 .category--table__left .a:hover {
   font-weight: bold;
@@ -365,5 +365,128 @@ footer {
   .img__descrip-0 {
     width: 200px;
     margin: 10px auto;
+  }
+}
+
+@media (width >= 64rem) {
+  .hero {
+    min-height: 500px;
+  }
+
+  .logo {
+    display: grid;
+    grid-template-areas: "h3 a";
+    align-items: center;
+  }
+  .logo h3 {
+    grid-area: h3;
+  }
+  .logo a {
+    grid-area: a;
+  }
+
+  .main__card {
+    gap: 100px;
+  }
+
+  .main--furniture {
+    width: 300px;
+    font-size: 1rem;
+    padding: 15px;
+  }
+
+  .main--category {
+    width: 1050px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+  }
+
+  .main--category h2,
+  .main--category p {
+    text-align: justify;
+    width: 650px;
+  }
+
+  .category--table__left,
+  .category--table__right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main--category__table .t {
+    text-align: center;
+    width: 130px;
+  }
+
+  .filter {
+    width: 200px;
+  }
+
+  .filter__3 h3 {
+    margin-bottom: 5px;
+    text-align: left;
+  }
+  .filter__3 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pilih {
+    display: grid;
+    grid-template-areas: "img-left img-right img-bottom";
+  }
+  .img-left {
+    grid-area: img-left;
+  }
+  .img-right {
+    grid-area: img-right;
+  }
+  .img-bottom {
+    grid-area: img-bottom;
+  }
+
+  .pilih__card {
+    width: 250px;
+  }
+
+  .pilih__card img {
+    width: 200px;
+  }
+
+  .pilih__card a {
+    padding: 6px 50px;
+  }
+
+  .filter__bawah {
+    display: flex;
+    width: 1050px;
+    margin: auto;
+  }
+
+  .descrip--item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+  }
+
+  .descrip--item__img {
+  }
+
+  .descrip--item__text {
+    font-size: 1.1rem;
+    text-align: left;
+    width: 300px;
+  }
+
+  .descrip--item__text p {
+    margin: 30px;
+  }
+
+  .descrip a {
+    margin-right: auto;
   }
 }
