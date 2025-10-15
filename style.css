@@ -228,6 +228,9 @@ body {
   justify-content: center;
   gap: 20px;
 }
+.descrip--item__text p {
+  margin: 15px 0 30px;
+}
 .mini-image img {
   width: 70px;
   height: 70px;
@@ -471,9 +474,6 @@ footer {
     flex-direction: row;
     align-items: center;
     margin: auto;
-  }
-
-  .descrip--item__img {
   }
 
   .descrip--item__text {

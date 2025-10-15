@@ -3,7 +3,251 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>...</title>
+    <title>Spesification</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        font-family: sans-serif;
+        height: 90vh;
+        background-color: #010101;
+      }
+
+      a:hover {
+        transition: 0.5s;
+        font-weight: 550;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      main {
+        color: #fffffe;
+        padding: 30px;
+      }
+
+      img {
+        border-radius: 10px;
+      }
+
+      main .img {
+        margin: 40px 50px 0 50px;
+      }
+
+      .button-action button {
+        border: none;
+        background: transparent;
+        font-size: 18px;
+      }
+
+      .button-action {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 5px auto;
+        background: white;
+        color: #010101;
+        padding: 5px 10px;
+        border-radius: 4px;
+        width: 70px;
+      }
+
+      .main--carda {
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .main--card__section {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      .main--card__item3 {
+        text-align: center;
+      }
+
+      .main--card__item3 a {
+        margin: 4px;
+        width: 60px;
+        border: 1.4px solid;
+        border-radius: 4px;
+        padding: 5px 9px;
+        background-color: #7f5af0;
+        color: #fffffe;
+      }
+
+      .main--card__item3 a:hover {
+        background-color: #fffffe;
+        border: 2px solid;
+        transition: 0.5s;
+        color: #7f5af0;
+        font-weight: 350;
+      }
+
+      .main--carda1 {
+        display: flex;
+        text-align: center;
+        width: 100%;
+      }
+
+      .main--carda1 a {
+        margin: 4px;
+        width: 60px;
+        border: 1.4px solid;
+        border-radius: 4px;
+        padding: 5px 9px;
+        background-color: #fffffe;
+        color: #7f5af0;
+      }
+
+      .main--carda1 .a:hover {
+        background-color: aliceblue;
+        color: black;
+      }
+
+      .main--carda1 .b:hover {
+        background-color: rgb(14, 121, 214);
+        color: #fffffe;
+      }
+
+      .main--carda1 .c:hover {
+        background-color: rgb(0, 255, 55);
+        color: #fffffe;
+      }
+
+      .main--carda1 .d:hover {
+        background-color: rgb(0, 6, 10);
+        color: #fffffe;
+      }
+
+      .cta {
+        margin: 40px 0 0;
+        text-align: center;
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .cta a {
+        margin: 4px;
+        width: 90px;
+        border: 1.4px solid;
+        border-radius: 4px;
+        padding: 5px 9px;
+        position: fixed;
+      }
+
+      .cta a:nth-child(1) {
+        background-color: red;
+        border: 2px solid;
+        bottom: 10px;
+        right: 15px;
+      }
+
+      .cta a:hover {
+        background-color: #fffffe;
+        color: red;
+      }
+
+      .cta .z {
+        background-color: #7f5af0;
+        bottom: 10px;
+        right: 150px;
+      }
+
+      .cta .z:hover {
+        background-color: #fffffe;
+        color: #7f5af0;
+      }
+
+      @media (width >= 48rem) {
+        body {
+          display: flex;
+          font-size: 1.3em;
+        }
+
+        img {
+          width: 300px;
+        }
+
+        main {
+          flex-direction: column;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: auto;
+        }
+
+        .cta a:nth-child(1) {
+          bottom: 150px;
+        }
+        .cta .z {
+          bottom: 150px;
+          width: 150px;
+          border: 2px solid;
+        }
+
+        .main--carda {
+          margin: auto;
+          gap: 25px;
+        }
+      }
+
+      @media (width >= 64rem) {
+        main {
+          flex-direction: row;
+        }
+
+        .cta a:nth-child(1) {
+          bottom: 30px;
+        }
+
+        .cta .z {
+          bottom: 30px;
+        }
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <div class="img"><img src="./assets/chair1.png" alt="" /></div>
+      <div class="main--card">
+        <div class="main--card__section">
+          <div class="main--carda">
+            <div class="main--card__item1">
+              <label>Set Quality</label>
+              <div class="button-action">
+                <button>-</button><span>1</span><button>+</button>
+              </div>
+            </div>
+            <div class="main--card__item2">
+              <label>Sub Total</label>
+              <p><b>RP</b>20.500</p>
+            </div>
+          </div>
+          <div class="main--card__item3">
+            <a href="#">Chat</a>
+            <a href="#">Whislist</a>
+            <a href="#">Share</a>
+          </div>
+        </div>
+        <div class="main--carda1">
+          <a href="#" class="a">White</a>
+          <a href="#" class="b">Blue</a>
+          <a href="#" class="c">Green</a>
+          <a href="#" class="d">I_reng</a>
+        </div>
+      </div>
+      <div class="cta">
+        <a href="index3.html">Checkout</a>
+        <a href="index3.html" class="z">Add to Cart</a>
+      </div>
+    </main>
+  </body>
 </html>

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conglaturations</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        font-family: sans-serif;
+        height: 90vh;
+        background-color: #010101;
+      }
+
+      /* index3--v2 */
+
+      .conglaturation {
+        background-image: linear-gradient(#7f5af0, #010101);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px;
+        border-radius: 10px;
+        position: fixed;
+        border: 2px solid #fffffe;
+        bottom: 60px;
+        top: 60px;
+        right: 60px;
+        left: 60px;
+      }
+
+      .conglate--text {
+        text-align: center;
+        margin: 30px;
+        font-size: large;
+      }
+
+      .conglate--text__button {
+        background-color: #410ae8;
+        border: none;
+        padding: 9px 12px;
+        color: #fffffe;
+        border-radius: 5px;
+        font-size: medium;
+      }
+
+      .conglate--text__button:hover {
+        transition: 0.5s;
+        background-color: #fffffe;
+        color: #410ae8;
+        border: 3px solid;
+      }
+
+      /* index3--v2 */
+
+      a:hover {
+        transition: 0.5s;
+        font-weight: 550;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      main {
+        color: #fffffe;
+        padding: 30px;
+      }
+
+      img {
+        border-radius: 10px;
+      }
+
+      main .img {
+        margin: 40px 50px 0 50px;
+      }
+
+      .button-action button {
+        border: none;
+        background: transparent;
+        font-size: 18px;
+      }
+
+      .button-action {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 5px auto;
+        background: white;
+        color: #010101;
+        padding: 5px 10px;
+        border-radius: 4px;
+        width: 70px;
+      }
+
+      .main--carda1 {
+        padding: 20px;
+        gap: 20px;
+        border-radius: 8px;
+        display: flex;
+        text-align: center;
+      }
+
+      .main--carda {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .main-c {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      .main--card__item3 a {
+        margin: 4px;
+        width: 60px;
+        border: 1.4px solid;
+        border-radius: 4px;
+        padding: 5px 9px;
+        background-color: #7f5af0;
+        color: #fffffe;
+      }
+
+      .main--card__item3 a:hover {
+        background-color: #fffffe;
+        border: 2px solid;
+        transition: 0.5s;
+        color: #7f5af0;
+        font-weight: 350;
+      }
+
+      .main--payment {
+        padding: 20px;
+      }
+
+      .label {
+        border: none;
+        background: none;
+        padding: 4px 5px;
+        border-radius: 5px;
+        color: #fffffe;
+      }
+
+      .main--payment__inline-item {
+        display: flex;
+      }
+
+      .label-no {
+        width: 50%;
+      }
+
+      select {
+        background: none;
+        color: #fffffe;
+        border: none;
+        padding: 4px 5px;
+        border-radius: 5px;
+        width: 99%;
+      }
+
+      .input {
+        background-color: #410ae8;
+        border: none;
+        color: #fffffe;
+        border-radius: 4px;
+        padding: 5px 9px;
+        margin: 50px auto 0;
+        width: 100%;
+      }
+
+      .input:hover {
+        background-color: #fffffe;
+        color: #410ae8;
+        font-weight: 550;
+        transition: 0.5s;
+        border: 2px solid #410ae8;
+      }
+
+      @media (width >= 48rem) {
+        main {
+          font-size: 1.3rem;
+        }
+
+        .main--payment {
+          padding: 0 60px;
+        }
+
+        .input {
+          padding: 7px 11px;
+        }
+      }
+
+      @media (width >= 64rem) {
+        main {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: auto;
+          height: 100%;
+          width: 1000px;
+        }
+
+        .conglaturation {
+          top: 60px;
+          bottom: 60px;
+          right: 500px;
+          left: 500px;
+        }
+
+        .conglate--text__button:hover {
+          padding: 9px 15px;
+          margin: 100px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="conglaturation">
+        <div class="conglate--img">
+          <img src="./assets/chair1.png" alt="" />
+        </div>
+        <div class="conglate--text">
+          <label>Total Amount</label>
+          <p><b>RP</b>20.500</p>
+          <button class="conglate--text__button">
+            <a href="index.html">See Invoice</a>
+          </button>
+        </div>
+      </div>
+      <div class="main--carda">
+        <div class="img"><img src="./assets/chair1.png" alt="" /></div>
+        <div class="main--card">
+          <div class="main--carda1">
+            <!-- <div class="main-c">
+                                
+                          </div> -->
+            <div class="main--card__item1">
+              <label>Set Quality</label>
+              <div class="button-action">
+                <button>-</button><span>1</span><button>+</button>
+              </div>
+            </div>
+            <div class="main--card__item2">
+              <label>Sub Total</label>
+              <p><b>RP</b>20.500</p>
+            </div>
+          </div>
+          <div class="main--card__item3">
+            <a href="#">Chat</a>
+            <a href="#">Whislist</a>
+            <a href="#">Share</a>
+          </div>
+        </div>
+      </div>
+      <div class="main--payment">
+        <h3>Payment</h3>
+        <input
+          type="text"
+          name=""
+          id="nama"
+          placeholder="Masukkan Username"
+          class="label"
+        />
+        <hr />
+        <div class="main--payment__inline-item">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="contoh@gmail.com"
+            class="label label-no"
+          />
+          <input
+            type="number"
+            name="no"
+            id="no"
+            placeholder="Masukkan nomor WA"
+            class="label label-no"
+          />
+        </div>
+        <hr />
+        <select name="provinsi" id="provinsi">
+          <option value="">-- Pilih Provinsi --</option>
+          <option value="jawa tengah">Jawa Tengah</option>
+          <option value="jawa timur">Jawa Timur</option>
+          <option value="jawa barat">Jawa Tengah</option>
+        </select>
+        <hr />
+        <select name="provinsi" id="provinsi">
+          <option value="">-- Pilih Kota --</option>
+          <option value="jawa tengah">Madiun</option>
+          <option value="jawa timur">Jogja</option>
+          <option value="jawa barat">Magetan</option>
+        </select>
+        <h3>Bank</h3>
+        <select name="provinsi" id="provinsi">
+          <option value="">-- Pilih Pembayaran --</option>
+          <option value="jawa tengah">BRI</option>
+          <option value="jawa timur">BNI</option>
+          <option value="jawa barat">Syariah</option>
+        </select>
+        <input type="button" value="Make Payment" class="input" />
+      </div>
+    </main>
+  </body>
+</html>
